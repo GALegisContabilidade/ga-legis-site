@@ -2,37 +2,144 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Perícia Contábil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#06121d,#0d2238);
+    color:#fff;
+}
+
+/* FUNDO COM IMAGEM ESCURA */
+.hero{
+    background:url('https://images.unsplash.com/photo-1581091215367-59ab6b8f7c8c') center/cover;
+    padding:100px 20px;
+    text-align:center;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero h1{
+    position:relative;
+    color:#d4af37;
+    font-family:'Playfair Display';
+    font-size:42px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(212,175,55,0.2);
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(212,175,55,0.2);
+}
+
+/* TÍTULOS */
+h2{
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+/* BOTÃO */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#d4af37,#f7d774);
+    color:#000;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
 </head>
 
-<body style="background:#07121f;color:white;font-family:Poppins;padding:30px">
+<body>
 
+<!-- HERO COM IMAGEM -->
+<div class="hero">
 <h1>Perícia Contábil</h1>
+</div>
 
-<h2>Áreas de atuação</h2>
+<div class="container">
 
-<h3>Trabalhista</h3>
-<p>Cálculos de verbas, rescisões, horas extras.</p>
+<h2>Áreas de Atuação</h2>
 
-<h3>Previdenciária</h3>
-<p>Revisões de benefícios e contribuições.</p>
+<div class="grid">
 
-<h3>Financeira</h3>
-<p>Apuração de valores, contratos e juros.</p>
+<div class="card">
+<h3>⚖️ Trabalhista</h3>
+<p>Cálculos de verbas, horas extras, rescisões e revisão de valores.</p>
+</div>
 
-<h3>PASEP</h3>
-<p>Revisões e apuração de valores indevidos.</p>
+<div class="card">
+<h3>📊 Previdenciária</h3>
+<p>Revisão de benefícios, contribuições e valores previdenciários.</p>
+</div>
+
+<div class="card">
+<h3>💰 Financeira</h3>
+<p>Apuração de valores, contratos, juros e correções.</p>
+</div>
+
+<div class="card">
+<h3>📑 PASEP</h3>
+<p>Revisões e identificação de valores indevidos.</p>
+</div>
+
+</div>
+
+<br><br>
 
 <h2>Documentos necessários</h2>
-<ul>
-<li>Processo judicial</li>
-<li>Documentos financeiros</li>
-<li>Contratos</li>
-</ul>
 
-<br>
+<div class="grid">
 
-<a href="https://wa.me/5544991655528">Solicitar análise</a>
+<div class="card">📂 Processo judicial</div>
+<div class="card">📄 Documentos financeiros</div>
+<div class="card">📜 Contratos</div>
+
+</div>
+
+<a class="btn" href="https://wa.me/5544991655528" target="_blank">
+Solicitar análise
+</a>
+
+</div>
 
 </body>
 </html>
