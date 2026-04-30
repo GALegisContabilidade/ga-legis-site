@@ -7,204 +7,47 @@
 <title>GA Legis</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-   margin:0;
-    font-family:'Poppins',sans-serif;
-    background: linear-gradient(135deg,#07121f,#0d2238);
-    color:#fff;
-}
-
-/* MARCA D'ÁGUA */
-body:::before{
-    content:"";
-    position:fixed;
-    width:500px;
-    height:500px;
-    background:url('logo.png') no-repeat center;
-    background-size:contain;
-    opacity:0.05;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:0;
-}
-
-.container{
-    position:relative;
-    z-index:1;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-/* TÍTULOS */
-h1,h2,h3{
-    font-family:'Playfair Display',serif;
-    color:#d4af37;
-}
-
-/* HERO */
-.hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-}
-
-.hero img{
-    width:320px;
-    border-radius:16px;
-    box-shadow:0 0 40px rgba(212,175,55,0.3);
-}
-
-.hero-text{
-    max-width:500px;
-}
-
-/* BOTÃO */
-.btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    background:linear-gradient(45deg,#d4af37,#f7d774);
-    color:#000;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-
-/* CARDS */
-.card{
-   background:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85') center/cover;
-   background:url('https://images.unsplash.com/photo-1554224154-22dec7ec8818') center/cover;
-   background:rgba(255,255,255,0.02);
-    border:1px solid rgba(212,175,55,0.2);
-    padding:25px;
-    border-radius:16px;
-    backdrop-filter:blur(8px);
-    transition:.3s;
-    cursor:pointer;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(212,175,55,0.2);
-}
-
-/* DIVISÃO */
-.section{
-    margin-top:60px;
-}
-
-/* FOOTER */
-footer{
-    margin-top:80px;
-    padding:40px;
-    text-align:center;
-    border-top:1px solid rgba(212,175,55,0.2);
-}
-
-footer a{
-    color:#d4af37;
-    margin:0 10px;
-    text-decoration:none;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- HERO -->
 <div class="hero">
-
-<div class="hero-text">
+<div>
 <h1>GA LEGIS</h1>
 <h2>Contabilidade & Consultoria</h2>
 
-<p>
-Soluções contábeis e periciais com precisão técnica, estratégia e segurança jurídica.
-</p>
+<p>Soluções contábeis e periciais com estratégia, precisão e segurança.</p>
 
 <a class="btn" href="https://wa.me/5544991655528" target="_blank">
-Fale comigo no WhatsApp
+Fale comigo
 </a>
 </div>
 
 <img src="sua-foto.jpg">
-
 </div>
 
-<!-- SOBRE -->
-<div class="section">
-<h2>Sobre Juliane</h2>
-<p>
-Profissional especializada em perícia contábil e cálculos estratégicos, com atuação voltada à excelência técnica, suporte a advogados, empresas e clientes que buscam segurança e resultados.
-</p>
-</div>
-
-<!-- PERÍCIA -->
 <div class="section">
 <h2>Perícia Contábil</h2>
 
 <div class="grid">
-
 <div class="card" onclick="location.href='pericia.html'">
-<h3>Cálculos Periciais</h3>
-<p>Trabalhistas, financeiros, previdenciários e PASEP.</p>
+<h3>⚖️ Cálculos Periciais</h3>
+<p>Trabalhista, financeira, previdenciária e PASEP.</p>
 </div>
-
-<div class="card">
-<h3>Assistente Técnico</h3>
-<p>Atuação em processos judiciais e extrajudiciais.</p>
-</div>
-
-<div class="card">
-<h3>Perícia Judicial</h3>
-<p>Nomeação e elaboração de laudos técnicos.</p>
-</div>
-
 </div>
 </div>
 
-<!-- CONTÁBIL -->
 <div class="section">
 <h2>Contabilidade & Negócios</h2>
 
 <div class="grid">
-
 <div class="card" onclick="location.href='mei.html'">
-<h3>MEI e Pequenos Negócios</h3>
-<p>Abertura, regularização e gestão completa.</p>
+<h3>📊 MEI e Pequenos Negócios</h3>
+<p>Abertura e regularização.</p>
 </div>
-
-<div class="card">
-<h3>Imposto de Renda</h3>
-<p>Pessoa Física e Jurídica com estratégia.</p>
-</div>
-
-<div class="card">
-<h3>Regularização Fiscal</h3>
-<p>Dívidas, Receita Federal e Simples Nacional.</p>
-</div>
-
 </div>
 </div>
 
@@ -212,16 +55,15 @@ Profissional especializada em perícia contábil e cálculos estratégicos, com 
 
 <footer>
 
-<p style="font-size:18px">
+<p>
 “ Contabilidade é mais que números.  
 É estratégia, segurança e crescimento. ”
 </p>
 
 <br>
 
-<a href="https://wa.me/5544991655528" target="_blank">WhatsApp</a>
+<a href="https://wa.me/5544991655528" target="_blank">WhatsApp</a> |
 <a href="https://instagram.com/ga_legis.contabil" target="_blank">Instagram</a>
-<a href="#">LinkedIn</a>
 
 </footer>
 
