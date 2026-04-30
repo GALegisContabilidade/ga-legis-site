@@ -7,19 +7,156 @@
 <title>GA Legis</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#06121d,#0d2238);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* LOGO MARCA D'ÁGUA */
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:url('logo.png') no-repeat center;
+    background-size:contain;
+    opacity:0.03;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* TÍTULOS */
+h1,h2,h3{
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.hero img{
+    width:340px;
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(212,175,55,0.3);
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+/* BOTÃO */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 28px;
+    background:linear-gradient(45deg,#d4af37,#f7d774);
+    color:#000;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.02);
+    border:1px solid rgba(212,175,55,0.2);
+    padding:30px;
+    border-radius:18px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(212,175,55,0.25);
+}
+
+/* ANIMAÇÃO */
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* SEÇÕES */
+.section{
+    margin-top:80px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:80px;
+    padding:40px;
+    text-align:center;
+    border-top:1px solid rgba(212,175,55,0.2);
+}
+
+/* WHATSAPP FIXO */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-<div class="hero">
-<div>
+<!-- HERO -->
+<div class="hero fade">
+
+<div class="hero-text">
 <h1>GA LEGIS</h1>
 <h2>Contabilidade & Consultoria</h2>
 
-<p>Soluções contábeis e periciais com estratégia, precisão e segurança.</p>
+<p>
+Especialista em perícia contábil e soluções estratégicas para empresas e advogados.
+</p>
 
 <a class="btn" href="https://wa.me/5544991655528" target="_blank">
 Fale comigo
@@ -27,45 +164,92 @@ Fale comigo
 </div>
 
 <img src="sua-foto.jpg">
+
 </div>
 
-<div class="section">
+<!-- PERÍCIA -->
+<div class="section fade">
 <h2>Perícia Contábil</h2>
 
 <div class="grid">
+
 <div class="card" onclick="location.href='pericia.html'">
-<h3>⚖️ Cálculos Periciais</h3>
-<p>Trabalhista, financeira, previdenciária e PASEP.</p>
+<h3>Cálculos Periciais</h3>
+<p>Trabalhistas, financeiros, previdenciários e PASEP.</p>
 </div>
+
+<div class="card">
+<h3>Assistente Técnico</h3>
+<p>Atuação estratégica em processos judiciais.</p>
+</div>
+
+<div class="card">
+<h3>Perícia Judicial</h3>
+<p>Elaboração de laudos técnicos especializados.</p>
+</div>
+
 </div>
 </div>
 
-<div class="section">
+<!-- CONTÁBIL -->
+<div class="section fade">
 <h2>Contabilidade & Negócios</h2>
 
 <div class="grid">
+
 <div class="card" onclick="location.href='mei.html'">
-<h3>📊 MEI e Pequenos Negócios</h3>
-<p>Abertura e regularização.</p>
+<h3>MEI e Pequenos Negócios</h3>
+<p>Abertura, regularização e suporte completo.</p>
 </div>
+
+<div class="card">
+<h3>Imposto de Renda</h3>
+<p>Planejamento e declarações PF e PJ.</p>
+</div>
+
+<div class="card">
+<h3>Regularização Fiscal</h3>
+<p>Dívidas, Receita Federal e Simples Nacional.</p>
+</div>
+
 </div>
 </div>
 
 </div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5544991655528" target="_blank">
+💬
+</a>
 
 <footer>
 
-<p>
+<p style="font-size:18px">
 “ Contabilidade é mais que números.  
 É estratégia, segurança e crescimento. ”
 </p>
 
 <br>
 
-<a href="https://wa.me/5544991655528" target="_blank">WhatsApp</a> |
 <a href="https://instagram.com/ga_legis.contabil" target="_blank">Instagram</a>
 
 </footer>
+
+<script>
+
+/* ANIMAÇÃO AO ROLAR */
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if(pos < window.innerHeight){
+            el.classList.add('show');
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>
