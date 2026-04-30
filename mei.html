@@ -2,26 +2,94 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>MEI - GA Legis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MEI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins';
+    background:linear-gradient(135deg,#06121d,#0d2238);
+    color:white;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') center/cover;
+    padding:100px;
+    text-align:center;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero h1{
+    position:relative;
+    color:#d4af37;
+    font-family:'Playfair Display';
+}
+
+.container{
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.box{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(212,175,55,0.2);
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:linear-gradient(45deg,#d4af37,#f7d774);
+    color:black;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+</style>
 </head>
 
-<body style="background:#0b1a2a;color:white;font-family:Arial;padding:30px">
+<body>
 
+<div class="hero">
 <h1>MEI - Microempreendedor Individual</h1>
+</div>
 
+<div class="container">
+
+<div class="box">
 <h2>Como abrir seu MEI</h2>
-<p>Processo simples e rápido, feito online com segurança e orientação completa.</p>
+<p>Processo simples, rápido e 100% online com orientação completa.</p>
+</div>
 
+<div class="box">
 <h2>Documentos necessários</h2>
 <ul>
 <li>CPF e RG</li>
 <li>Comprovante de endereço</li>
-<li>Título de eleitor ou recibo IR</li>
+<li>Título de eleitor ou IR</li>
 </ul>
+</div>
 
-<br>
+<a class="btn" href="https://wa.me/5544991655528">
+Falar com especialista
+</a>
 
-<a href="https://wa.me/5544991655528">Falar com especialista</a>
+</div>
 
 </body>
 </html>
