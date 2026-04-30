@@ -1,194 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GA LEGIS Contabilidade & Consultoria</title>
+<title>GA Legis Contabilidade & Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0b1a2a;
+    color: #fff;
 }
 
-body{
-font-family:'Poppins', sans-serif;
-background:#0b1320;
-color:white;
-line-height:1.6;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-header{
-padding:90px 20px;
-text-align:center;
-background:linear-gradient(135deg,#0b1320,#162032);
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
 }
 
-h1{
-font-family:'Playfair Display', serif;
-font-size:64px;
-color:#d4af37;
-letter-spacing:2px;
-margin-bottom:10px;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.sub{
-font-size:22px;
-font-weight:300;
-color:#f2f2f2;
-margin-bottom:10px;
+.hero img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(212,175,55,0.3);
 }
 
-.nome{
-font-size:18px;
-color:#cfcfcf;
-margin-bottom:30px;
+.card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(212,175,55,0.2);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.btn{
-display:inline-block;
-padding:16px 34px;
-background:#d4af37;
-color:#0b1320;
-font-weight:600;
-text-decoration:none;
-border-radius:40px;
-transition:0.3s;
-font-size:16px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
 }
 
-.btn:hover{
-transform:translateY(-3px);
-opacity:0.9;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
 }
 
-section{
-max-width:1150px;
-margin:auto;
-padding:70px 20px;
+.button {
+    background: linear-gradient(45deg,#d4af37,#f5d76e);
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-h2{
-font-family:'Playfair Display', serif;
-font-size:42px;
-color:#d4af37;
-margin-bottom:25px;
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid rgba(212,175,55,0.2);
+    margin-top: 50px;
 }
-
-p{
-font-size:18px;
-color:#e6e6e6;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.card{
-background:#162032;
-padding:30px;
-border-radius:22px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-color:#d4af37;
-font-size:24px;
-margin-bottom:15px;
-}
-
-footer{
-text-align:center;
-padding:50px 20px;
-border-top:1px solid rgba(255,255,255,0.08);
-color:#cfcfcf;
-font-size:16px;
-}
-
 </style>
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
+<!-- HERO -->
+<div class="hero">
+<div>
 <h1>GA LEGIS</h1>
+<h2>Contabilidade & Consultoria</h2>
+<p>Contabilidade é mais que números. É estratégia, segurança e crescimento.</p>
 
-<div class="sub">Contabilidade & Consultoria</div>
+<a class="button" href="https://wa.me/5544991655528" target="_blank">Fale no WhatsApp</a>
+</div>
 
-<div class="nome">Juliane Guimarães Avelino</div>
+<img src="sua-foto.jpg">
+</div>
 
-<a class="btn" href="https://wa.me/5544991655528">Fale no WhatsApp</a>
+<br><br>
 
-</header>
+<!-- SOBRE -->
+<h2>Sobre Juliane</h2>
+<p>Profissional contábil especializada em perícias e cálculos estratégicos, com atuação voltada à precisão técnica, segurança jurídica e suporte completo a empresas e advogados.</p>
 
-<section>
+<br><br>
 
-<h2>Excelência Contábil com Visão Estratégica</h2>
+<!-- PERÍCIA -->
+<h2>Perícia Contábil</h2>
+<div class="grid">
 
-<p>
-Atendimento moderno, humano e profissional para pessoas físicas,
-MEIs, empresas e demandas periciais em todo o Brasil.
-</p>
-
-</section>
-
-<section>
-
-<h2>Serviços</h2>
-
-<div class="cards">
+<div class="card" onclick="location.href='pericia.html'">
+<h3>Cálculos Periciais</h3>
+<p>Trabalhistas, financeiros, previdenciários e PASEP.</p>
+</div>
 
 <div class="card">
-<h3>Cálculos Periciais</h3>
-<p>Liquidações trabalhistas, revisões técnicas e pareceres.</p>
+<h3>Assistente Técnico</h3>
+<p>Atuação em processos judiciais e extrajudiciais.</p>
+</div>
+
+<div class="card">
+<h3>Perícia Judicial</h3>
+<p>Nomeações e atuação técnica especializada.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<!-- CONTÁBIL -->
+<h2>Contabilidade & Negócios</h2>
+<div class="grid">
+
+<div class="card" onclick="location.href='mei.html'">
+<h3>MEI e Pequenos Negócios</h3>
+<p>Abertura, regularização e gestão.</p>
 </div>
 
 <div class="card">
 <h3>Imposto de Renda</h3>
-<p>Declaração, retificação e planejamento tributário.</p>
+<p>PF e PJ com planejamento estratégico.</p>
 </div>
 
 <div class="card">
-<h3>MEI & Empresas</h3>
-<p>Abertura, regularização e gestão contábil.</p>
-</div>
-
-<div class="card">
-<h3>Consultoria</h3>
-<p>Soluções estratégicas para crescimento seguro.</p>
+<h3>Consultoria Empresarial</h3>
+<p>Gestão, relatórios e organização financeira.</p>
 </div>
 
 </div>
 
-</section>
-
-<section>
-
-<h2>Contato</h2>
-
-<p>📍 Paiçandu - Paraná</p>
-<p>📩 galegiscontabilidade@outlook.com</p>
-<p>📱 (44) 99165-5528</p>
-<p>📷 @ga_legis.contabil</p>
-
-</section>
+</div>
 
 <footer>
 
-GA LEGIS Contabilidade & Consultoria © 2026
+<p>“ Contabilidade é mais que números. É estratégia, segurança e crescimento para hoje e amanhã. ”</p>
+
+<br>
+
+<a href="https://wa.me/5544991655528" target="_blank">WhatsApp</a> |
+<a href="https://instagram.com/ga_legis.contabil" target="_blank">Instagram</a> |
+<a href="#">LinkedIn</a>
 
 </footer>
 
